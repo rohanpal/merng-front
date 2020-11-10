@@ -8,7 +8,7 @@ import { setContext } from "apollo-link-context"
 import { variables } from "./utils/variables"
 
 const link = createHttpLink({
-  uri: "http://localhost:5000",
+  uri: "https://hidden-badlands-01849.herokuapp.com/",
 })
 const authLink = setContext(() => {
   const token = localStorage.getItem(variables.token)
